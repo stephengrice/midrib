@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+u = User.new name: 'Test User', pubkey: 'fake pubkey'
+
+p = Post.new message: 'Test post', user: u, signature: 'fake signature'
