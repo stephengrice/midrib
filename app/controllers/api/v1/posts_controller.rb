@@ -2,7 +2,8 @@ module Api
   module V1
     class PostsController < ApplicationController
       def index
-        render json: {message: 'hello'}
+        @posts = Post.all
+        render json: @posts
       end
     end
   end
